@@ -7,12 +7,11 @@ import { Observable } from 'rxjs';
   styleUrls: ['./web.component.css']
 })
 export class WebComponent {
-  cards$: Observable<any[]>;
+  cards$: Observable<any>;
   mainCallOut$: Observable<any>;
 
   constructor() {
-    this.cards$ = [];
-    this.mainCallOut$ = [];
+  
   }
   
 }

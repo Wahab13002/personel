@@ -1,15 +1,28 @@
 <nav class="site-header sticky-top py-1">
-        <div class="container d-flex flex-column flex-md-row justify-content-between">
-          <!-- <a class="py-2" href="#">
-            <img src="/assets/images/logo512.png" width="24" height="24"/>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
-          </a> -->
-          <a class="py-2 d-none d-md-inline-block" href="#">Tour</a>
-          <a class="py-2 d-none d-md-inline-block" href="#">Product</a>
-          <a class="py-2 d-none d-md-inline-block" href="#">Features</a>
-          <a class="py-2 d-none d-md-inline-block" href="#">Enterprise</a>
-          <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
-          <a class="py-2 d-none d-md-inline-block" href="#">Pricing</a>
-          <a class="py-2 d-none d-md-inline-block" href="#">Cart</a>
-        </div>
-      </nav>
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
+    <!-- <a class="py-2" href="#">
+      <img src="/assets/images/logo512.png" width="24" height="24"/>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+    </a> -->
+    <a href="#"><img class="img-responsive" src="assets/img/ramadan-png-42057.png" width="45" height="45"/></a>
+    <a class="py-2 d-none d-md-inline-block" href="#">Acceuil</a>
+    
+    <a class="py-2 d-none d-md-inline-block" href="/mosquee">La mosquée</a>
+    <a class="py-2 d-none d-md-inline-block" href="/institut">L'institut</a>
+    <a class="py-2 nav-link dropdown-toggle"[ngClass]="{'show' : evenementClicked}"  id="navbarEvenement" role="button" data-toggle="evenement" aria-haspopup="true" aria-expanded="false" (click)="evenementClicked = !this.evenementClicked">Evenement</a>
+    <div class="evenement-menu dropdown-menu" [ngClass]="{ 'show' : evenementClicked}" aria-labelledby="navbarEvenement">
+      <a class="evenement-item" href="/evenementMosquee">Mosquée</a>
+      <div class="evenement-divider"></div>
+      <a class="evenement-item" href="/evenementInstitut">Institut</a>
+    </div>
+    <a class="nav-link dropdown-toggle" [ngClass]="{'show' : informationClicked}" id="navbarInformation " role="button" data-toggle="information" aria-haspopup="true" aria-expanded="false" (click)="informationClicked = !this.informationClicked">
+      Information
+    </a>
+    <div class="information-menu dropdown-menu" [ngClass]="{ 'show' : informationClicked}" aria-labelledby="navbarInformation">
+      <a class="information-item" href="/informationCovid">COVID</a>
+      <div class="information-divider"></div>
+      <a class="information-item" href="/informationPriere">Horaire de prière</a>
+    </div>
+    <a class="py-2 d-none d-md-inline-block" href="/contact">Contact</a>
+  </div>
+</nav>
