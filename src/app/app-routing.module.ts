@@ -8,6 +8,7 @@ import { EvenementMosqueeComponent } from './evenement-mosquee/evenement-mosquee
 import { EvenementInstitutComponent } from './evenement-institut/evenement-institut.component';
 import { InformationCovidComponent } from './information-covid/information-covid.component';
 import { InformationPrayerTimeComponent } from './information-prayer-time/information-prayer-time.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path : 'evenementInstitut', component: EvenementInstitutComponent},
   { path : 'informationCovid', component: InformationCovidComponent},
   { path : 'informationPriere', component: InformationPrayerTimeComponent},
+  { path : 'contact', component: ContactComponent}
 
 ];
 

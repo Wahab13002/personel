@@ -9,20 +9,31 @@
     
     <a class="py-2 d-none d-md-inline-block" href="mosquee">La mosquée</a>
     <a class="py-2 d-none d-md-inline-block" href="institut">L'institut</a>
-    <a class="py-2 nav-link dropdown-toggle"[ngClass]="{'show' : evenementClicked}"  id="navbarEvenement" role="button" data-toggle="evenement" aria-haspopup="true" aria-expanded="false" (click)="evenementClicked = !this.evenementClicked">Evenement</a>
-    <div class="evenement-menu dropdown-menu" [ngClass]="{ 'show' : evenementClicked}" aria-labelledby="navbarEvenement">
-      <a class="evenement-item" href="/evenementMosquee">Mosquée</a>
-      <div class="evenement-divider"></div>
-      <a class="evenement-item" href="/evenementInstitut">Institut</a>
-    </div>
-    <a class="nav-link dropdown-toggle" [ngClass]="{'show' : informationClicked}" id="navbarInformation " role="button" data-toggle="information" aria-haspopup="true" aria-expanded="false" (click)="informationClicked = !this.informationClicked">
-      Information
-    </a>
-    <div class="information-menu dropdown-menu" [ngClass]="{ 'show' : informationClicked}" aria-labelledby="navbarInformation">
-      <a class="information-item" href="/informationCovid">COVID</a>
-      <div class="information-divider"></div>
-      <a class="information-item" href="/informationPriere">Horaire de prière</a>
-    </div>
+
+ 
+
+    
+    <div ngbDropdown class="d-inline-block">
+      <a class="py-2 d-none d-md-inline-block" id="dropdownBasic1" ngbDropdownToggle>Évènement</a>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <a class="dropdown-item" href="/evenementMosquee">Mosquée</a>
+            <div class="divider dropdown-divider"></div>
+            <a class="dropdown-item" href="/evenementInstitut">Institut</a>
+          </div>
+      </div>
+
+      <div ngbDropdown class="d-inline-block">
+        <a class="py-2 d-none d-md-inline-block" id="dropdownBasic1" ngbDropdownToggle>Information</a>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <a class="dropdown-item" href="/informationCovid">COVID</a>
+              <div class="divider dropdown-divider"></div>
+              <a class="dropdown-item" href="/informationPriere">Horaire de prière</a>
+              <div class="divider dropdown-divider"></div>
+              <a class="dropdown-item" href="/informationInstitut">Institut</a>
+            </div>
+        </div>
+      
     <a class="py-2 d-none d-md-inline-block" href="/contact">Contact</a>
   </div>
 </nav>
+
