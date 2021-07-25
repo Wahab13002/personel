@@ -1,4 +1,14 @@
 .site-header {
 
-    color: white;
+    color: rgb(0, 0, 0);
+}
+
+.py-2 {
+
+    color: rgb(0, 0, 0);
+}
+
+.py-1 {
+    padding-top: 1.75rem!important;
+    padding-bottom: 1.25rem!important;
 }
