@@ -1,4 +1,4 @@
-<div class="position-relative overflow-hidden p-10 p-md-5 m-md-3 text-center bg-light">
+<div class="position-relative overflow-hidden p-md-5 text-center bg-light">
   <div class="col-md-15 p-lg-1 mx-auto my-10">
       <h5>Mosquée Malaval</h5>
     <h1>L'histoire de la mosquée</h1>
@@ -26,7 +26,27 @@
 </div>
 
 
+<ngb-carousel *ngIf="images">
+  <ng-template ngbSlide *ngFor="let image of images">
+    <div class="picsum-img-wrapper">
+      <img [src]="image" alt="Random first slide">
+    </div>
+    <div class="carousel-caption">
+      <h3>First slide label</h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </div>
+  </ng-template>
+</ngb-carousel>
 
+<section class="py-5 text-center container">
+  <div class="row py-lg-5">
+    <div class="col-lg-100 mx-auto">
+    <h1 class="jumbotron-heading">Des rénovations permanentes</h1>
+    <h4>assurée par les dons des fidèles</h4>
+    <p class="lead text-muted">Les actualités de la mosquée malaval, d'une part celle liée à la mosquée en elle-même mais aussi celle liée à l'institut;</p>
+    </div>
+  </div>
+</section>
 
 <ngb-carousel *ngIf="images">
   <ng-template ngbSlide *ngFor="let image of images">
@@ -39,6 +59,7 @@
     </div>
   </ng-template>
 </ngb-carousel>
+
 
 <section class="py-5 text-center container">
   <div class="row py-lg-5">
