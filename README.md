@@ -37,3 +37,19 @@ Powered By [23Blocks](https://www.23blocks.com)
 
 With Love from Boulder, CO.
 # personel
+
+Options communes
+git commit
+Commitez l'instantané stagé. Cette action lancera un éditeur de texte qui vous demandera un message de commit. Après avoir saisi un message, enregistrez le fichier et fermez l'éditeur pour créer le commit réel.
+
+git commit -a
+Commitez un instantané de tous les changements apportés au répertoire de travail. Celui-ci inclut uniquement les changements dans les fichiers suivis (ceux qui ont été ajoutés grâce à git add à un moment donné dans l'historique).
+
+git commit -m "commit message"
+Une commande de raccourci qui crée immédiatement un commit avec un message de commit transmis. Par défaut, git commit ouvre l'éditeur de texte configuré en local et invite à saisir un message de commit. Lorsque vous transmettez l'option -m, vous renoncez à l'invite d'éditeur de texte au profit d'un message contextuel.
+
+git commit -am "commit message"
+Une commande de raccourci pour les utilisateurs intensifs, qui combine les options -a et -m. Cette combinaison crée immédiatement un commit de tous les changements stagés et insère un message de commit contextuel.
+
+git commit --amend
+Cette option ajoute un autre niveau de fonctionnalité à la commande de commit. Lorsque vous transmettez cette option, le dernier commit sera modifié. Au lieu de créer un commit, les changements stagés sont ajoutés au commit précédent. Cette commande ouvre l'éditeur de texte configuré pour le système et invite à modifier le message de commit précédemment indiqué.
