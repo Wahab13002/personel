@@ -4,34 +4,34 @@
       <img src="/assets/images/logo512.png" width="24" height="24"/>
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
     </a> -->
-    <a href="#"><img class="img-responsive" src="assets/img/Malaval.png" width="200" height="60"/></a>
-    <a class="py-2 d-none d-md-inline-block" href="#">Acceuil</a>
+    <a href="#"><img class="img-responsive" src="assets/img/Mosquee_Daoua_1.0_horizontale.png" width="200" height="60"/></a>
+    <a class="py-2 d-none d-md-inline-block" routerLink="landing">Acceuil</a>
     
-    <a class="py-2 d-none d-md-inline-block" href="mosquee">La mosquée</a>
-    <a class="py-2 d-none d-md-inline-block" href="institut">L'institut</a>
+    <a class="py-2 d-none d-md-inline-block" routerLink="mosquee">La mosquée</a>
+    <a class="py-2 d-none d-md-inline-block" routerLink="institut">L'institut</a>
 
     
     <div ngbDropdown class="d-inline-block" >
       <a class="py-2 d-none d-md-inline-block" id="dropdownBasic1" ngbDropdownToggle>Évènement</a>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-            <a class="dropdown-item" href="/evenementMosquee">Mosquée</a>
+            <a class="dropdown-item" routerLink="evenementMosquee">Mosquée</a>
             <div class="divider dropdown-divider"></div>
-            <a class="dropdown-item" href="/evenementInstitut">Institut</a>
+            <a class="dropdown-item" routerLink="evenementInstitut">Institut</a>
           </div>
       </div>
 
       <div ngbDropdown class="d-inline-block">
         <a class="py-2 d-none d-md-inline-block" id="dropdownBasic1" ngbDropdownToggle>Information</a>
             <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-              <a class="dropdown-item" href="/informationCovid">COVID</a>
+              <a class="dropdown-item" routerLink="informationCovid">COVID</a>
               <div class="divider dropdown-divider"></div>
-              <a class="dropdown-item" href="/informationPriere">Horaire de prière</a>
+              <a class="dropdown-item" routerLink="informationPriere">Horaire de prière</a>
               <div class="divider dropdown-divider"></div>
-              <a class="dropdown-item" href="/informationInstitut">Institut</a>
+              <a class="dropdown-item" routerLink="informationInstitut">Institut</a>
             </div>
         </div>
       
-    <a class="py-2 d-none d-md-inline-block" href="/contact">Contact</a>
+    <a class="py-2 d-none d-md-inline-block" routerLink="contact">Contact</a>
   </div>
 </nav>
 
