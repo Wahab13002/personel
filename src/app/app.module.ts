@@ -15,7 +15,6 @@ import { ContactComponent } from './contact/contact.component';
 import { EvenementMosqueeComponent } from './evenement-mosquee/evenement-mosquee.component';
 import { EvenementInstitutComponent } from './evenement-institut/evenement-institut.component';
 import { InformationCovidComponent } from './information-covid/information-covid.component';
-import { InformationPrayerTimeComponent } from './information-prayer-time/information-prayer-time.component';
 
 
 @NgModule({
@@ -29,7 +28,7 @@ import { InformationPrayerTimeComponent } from './information-prayer-time/inform
     EvenementMosqueeComponent,
     EvenementInstitutComponent,
     InformationCovidComponent,
-    InformationPrayerTimeComponent,
+
     
   ],
   imports: [
