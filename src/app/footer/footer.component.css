@@ -1,6 +1,7 @@
 body { color: #ccc }
 .footer-widget p {
     margin-bottom: 27px;
+   
 }
 p {
     font-family: 'Nunito', sans-serif;
@@ -307,5 +308,11 @@ p {
       cursor: pointer;
       background: #FA6742;
       border-color: #FA6742; }
-      
+
+  .row {
+
+   position: relative;
+  }
+
+ 
   /* Credit to https://bootsnipp.com/snippets/ooa9M  */    
