@@ -12,7 +12,7 @@
                         <div class="col-md-7">
                             <div class="contact-wrap w-100 p-md-5 p-4">
                                 <h3 class="mb-4">Contactez-nous</h3>
-                                <div id="form-message-warning" class="mb-4"></div> 
+                                <div id="form-message-warning" class="mb-4"></div>
                           <div id="form-message-success" class="mb-4">
                         Écrivez votre message s'il vous plaît.
                           </div>
@@ -23,32 +23,32 @@
                             <input type="text" formControlName="message" name="message"/>
                             <button id="my-form-button">Submit</button>
                             <p id="my-form-status"></p>
-                          </form>--> 
-                          
-                                <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                          </form>-->
+
+                                <form (ngSubmit)="onsubmit()" id="contactForm" name="contactForm" class="contactForm" [formGroup]="myform">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="label" for="name">Nom et prénom</label>
-                                                <input type="text" class="form-control" name="name" id="name" placeholder="Nom et prénom">
+                                                <input type="text" class="form-control" formControlName="name" name="name" id="name" placeholder="Nom et prénom">
                                             </div>
                                         </div>
-                                        <div class="col-md-6"> 
+                                        <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="label" for="email">Adresse mail</label>
-                                                <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                                                <input type="email" class="form-control" formControlName="email" name="email" id="email" placeholder="Email">
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label class="label" for="subject">Sujet</label>
-                                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Sujet">
+                                                <input type="text" class="form-control" formControlName="subject" name="subject" id="subject" placeholder="Sujet">
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label class="label" for="#">Écrivez votre message</label>
-                                                <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+                                                <textarea name="message" class="form-control" formControlName="message" id="message" cols="30" rows="4" placeholder="Message"></textarea>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
@@ -73,7 +73,7 @@
                             <span class="fa fa-map-marker"></span>
                         </div>
                         <div class="text">
-                        <p><span>Addresse:</span> 24 Rue Malaval, 13002 Marseille</p>
+                        <p><span>Adresse:</span> 24 Rue Malaval, 13002 Marseille</p>
                       </div>
                   </div>
                         </div>
@@ -83,7 +83,7 @@
                             <span class="fa fa-phone"></span>
                         </div>
                         <div class="text">
-                        <p><span>Téléphone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+                        <p><span>Téléphone:</span> <a href="tel://O749364482"> 07 49 36 44 82</a></p>
                       </div>
                   </div>
                         </div>
@@ -93,11 +93,11 @@
                             <span class="fa fa-paper-plane"></span>
                         </div>
                         <div class="text">
-                        <p><span>Email:</span> <a href="mailto:info@yoursite.com"> info@yoursite.com</a></p>
+                        <p><span>Email:</span> <a href="mailto:wallaouii@yahoo.fr"> info@yoursite.com</a></p>
                       </div>
                   </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {
-  
+
   ReactiveFormsModule,
   FormsModule,
   FormGroup,
@@ -19,33 +19,27 @@ export class ContactComponent implements OnInit {
   myform: FormGroup = new FormGroup({
     email: new FormControl(''),
     message: new FormControl(''),
-  });;
-  email: FormControl ;
-  message: FormControl;
+    name: new FormControl(''),
+    subject: new FormControl('')
+  });
   ngOnInit() {
   }
 
   onsubmit() {
-
-
-
-    
-
-    console.log('...')
-      console.log('0')
-    fetch("//formspree.io/f/mleaoywb", {
+    console.log('0');
+    fetch('https://formspree.io/f/mleaoywb', {
       method: 'POST',
-      body: this.myform.toString(),
+      body: JSON.stringify(this.myform.value),
       headers: {
           'Accept': 'application/json'
       }
     }).then(response => {
-        console.log('1')
-      this.myform.reset()
+        console.log(1);
+        this.myform.reset();
     }).catch(error => {
-      console.log('2')
+      console.log('2');
     });
-        
+
 
   }
 
